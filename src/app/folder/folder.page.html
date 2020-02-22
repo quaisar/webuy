@@ -15,7 +15,34 @@
   </ion-header>
 
   <div id="container">
-    <strong class="capitalize">{{ folder }}</strong>
-    <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <ion-slides pager="false" class="slide-perview" [options]="slidePerViewOpts">
+
+      <ion-slide>
+        <div class="slide">
+          <img src="assets/images/1.jpg"/>
+          <h2>Welcome</h2>
+          
+        </div>
+      </ion-slide>
+  
+      <ion-slide>
+        <img src="assets/images/2.jpg"/>
+        <h2>What is Ionic?</h2>
+        
+      </ion-slide>
+  
+      <ion-slide>
+        <img src="assets/images/1.jpg"/>
+        <h2>What is Ionic Appflow?</h2>
+        
+      </ion-slide>
+  
+      <ion-slide>
+        <img src="assets/images/2.jpg"/>
+        <h2>Ready to Play?</h2>
+        
+      </ion-slide>
+  
+    </ion-slides>
   </div>
 </ion-content>

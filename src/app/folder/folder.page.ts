@@ -7,6 +7,16 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./folder.page.scss'],
 })
 export class FolderPage implements OnInit {
+  slidePerViewOpts = {
+    speed: 1000,
+    spaceBetween: 16,
+    loop: true,
+    autoplay: {
+      delay: 500,
+  },
+    slidesPerView: 3,
+};
+
   public folder: string;
 
   constructor(private activatedRoute: ActivatedRoute) { }
